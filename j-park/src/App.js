@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react'
 import Home from './components/Home'
 import JoinForm from './components/JoinForm';
 import Attractions from './components/Attractions';
+import DinoDeets from './components/DinoDeets';
+import Dinos from './components/DinoList'
 
 function App() {
   const [page, setPage] = useState(<Home/>)
@@ -18,15 +20,15 @@ function App() {
     console.log("You are now at the join form")
   }
   const goAttractions = () =>{
-    setPage(<Attractions dinos={goDinos} details={goDinoDetails}/>)
+    setPage(<Attractions dinos={goDinos} details={goDinoDeets}/>)
     console.log("You are now at the Attractions page")
   }
   const goDinos = () =>{
     setPage(<Dinos/>)
     console.log('You are now at the Dinos page!')
   }
-  const goDinoDetails = () =>{
-    setPage(<DinoDetails/>)
+  const goDinoDeets = () =>{
+    setPage(<DinoDeets />)
   }
 
   const [newUser, setNewUser] =useState({
@@ -48,19 +50,21 @@ function App() {
 
   return (
     <div className="App">
-        <nav>
-            <img src='https://i.imgur.com/xxlw1er.png' alt="Jurassic Logo" id="logo" onClick={goHome}/>
-            <ul id='navbar'>
-                <li onClick={goAttractions}>Attractions</li>
-                <li>Restaurants</li>
-                <li>About Us</li>
-                <li>Tickets/Pricing</li>
-                <li>Travel</li>
-                <li onClick={goJoin}>Join Our Dino Club!</li>
-            </ul>
-        </nav>
-        <div className='body'>
-          {page}
+      <div className='main'>
+          <nav>
+              <img src='https://i.imgur.com/xxlw1er.png' alt="Jurassic Logo" id="logo" onClick={goHome}/>
+              <ul id='navbar'>
+                  <li onClick={goAttractions}>Attractions</li>
+                  <li>Restaurants</li>
+                  <li>About Us</li>
+                  <li>Tickets/Pricing</li>
+                  <li>Travel</li>
+                  <li onClick={goJoin}>Join Our Dino Club!</li>
+              </ul>
+          </nav>
+          <div className='body'>
+            {page}
+          </div>
         </div>
     </div>
   );

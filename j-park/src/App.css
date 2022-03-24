@@ -1,3 +1,6 @@
+.main{
+    background-color:rgba(40, 204, 40, 0.527);
+}
 nav{
     display:flex;
     background-color:aquamarine;
@@ -11,4 +14,8 @@ nav{
     display: inline;
     list-style-type: none;
     cursor: pointer;
+}
+.body{
+    display: flex;
+    justify-content: center;
 }
