@@ -1,0 +1,12 @@
+nav{
+    display:flex;
+    background-color:aquamarine;
+}
+#logo{
+    width:100px;
+    height:100px;
+}
+#navbar{
+    display: inline;
+    list-style-type: none;
+}

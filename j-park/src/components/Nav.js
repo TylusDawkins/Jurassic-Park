@@ -1,17 +1,11 @@
-import './App.css';
-import { useState } from 'react'
-import Nav from './components/Nav'
-import Home from './components/Home'
+import React from "react"
 
-function App() {
-  const [page, setPage] = useState(<Home/>)
-  
+const Nav = () => {
 
-  return (
-    <div className="App">
+    return (
         <nav>
             <img src='https://i.imgur.com/xxlw1er.png' alt="Jurassic Logo" id="logo"/>
-            <ul id='navbar'>
+            <ul>
                 <li>Attractions</li>
                 <li>Restaurants</li>
                 <li>About Us</li>
@@ -20,11 +14,7 @@ function App() {
                 <li>Join Our Dino Club!</li>
             </ul>
         </nav>
-        <div className='body'>
-          {page}
-        </div>
-    </div>
-  );
+    )
 }
 
-export default App;
+export default Nav
