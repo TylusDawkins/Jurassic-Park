@@ -1,0 +1,33 @@
+#atmain{
+    display:flex;
+    height: 45em;
+    width: 115em;
+    justify-content: center;
+}
+.attractionimg{
+    height: 250px;
+    width: 500px;
+}
+.card{
+    display:flex;
+    border: 1px solid black;
+    background-color: silver;
+    border-radius: 5%;
+    height: 300px;
+    width: 900px;
+    font-size: 4em;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+#card2{
+    display: flex;
+    align-content: flex-start;
+    align-self: flex-end;
+
+}
+
+#atmain{
+    border: 1px solid black;
+}
