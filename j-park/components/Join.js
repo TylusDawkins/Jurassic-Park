@@ -14,14 +14,14 @@ const JoinForm = (props) => {
           type="text"
           value={newUser.firstName}
           onChange={props.handleChange}
-          name={"first"}
+          name={"firstName"}
           placeholder={"First Name"}
         />
         <input
           type="text"
-          value={newUser.lasstName}
+          value={newUser.lastName}
           onChange={props.handleChange}
-          name={"last"}
+          name={"lastName"}
           placeholder={"Last Name"}
         />
         <input
@@ -45,3 +45,24 @@ const JoinForm = (props) => {
 };
 
 export default JoinForm;
+
+
+// const [newUser, setNewUser] =useState({
+//     firstName: '',
+//     lastName: '',
+//     email: '',
+//     age: ''
+// })
+// const addUser = (e) => {
+//     e.preventDefault()
+    
+// }
+// const handleChange = (e) => {
+//     setNewUser({...newUser, [e.target.name]: e.target.value})
+// }
+
+// <JoinForm
+// newUser={newUser}
+// handleChange={handleChange}
+// addUser={addUser}
+// />
