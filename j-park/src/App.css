@@ -5,8 +5,10 @@ nav{
 #logo{
     width:100px;
     height:100px;
+    cursor: pointer;
 }
 #navbar{
     display: inline;
     list-style-type: none;
+    cursor: pointer;
 }
