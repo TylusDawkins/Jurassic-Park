@@ -16,17 +16,17 @@
 ### ***Front End***
 #### Trevor Bond - Tylus Dawkins
 [Front End Trello](https://trello.com/b/rtxEhZqg/jurassic-park-front-end)
-- [] Landing page
-    - [] Banner
-    - [] Nav
-    - [] Footer
+- [x] Landing page
+    - [x] Banner
+    - [x] Nav
+    - [] Footer?
 - [] Dinosaurs
 - [] Restaurants
 - [] Rides
 - [] Key staff
 - [x] Newsletter signup
-    - [] addUser function
-    - [] handleChange function
+    - [?] addUser function
+    - [?] handleChange function
 ### ***Back End***
 ####
 [Back End Trello](https://trello.com/b/IqmrVGGb/jurassic-park)    
