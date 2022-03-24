@@ -24,7 +24,9 @@
 - [] Restaurants
 - [] Rides
 - [] Key staff
-- [] Newsletter signup
+- [x] Newsletter signup
+    - [] addUser function
+    - [] handleChange function
 ### ***Back End***
 ####
 [Back End Trello](https://trello.com/b/IqmrVGGb/jurassic-park)    
