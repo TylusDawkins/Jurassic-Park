@@ -4,7 +4,7 @@ import './Attractions.css';
 const Attractions = (props) => {
 
     return (
-        <div id="atmain2"> 
+        <div id="atmain"> 
             <div id='card1' className="card" onClick={props.dinos}>
                 <img src='https://controlroom.jurassicoutpost.com/app/uploads/2016/05/tlw4.jpg' alt="A woman touches a baby Dinosaur" className="attractionimg"/>
                 <p>Meet Real Life Dinos!</p>
